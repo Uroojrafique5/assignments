@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Report Form</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  label {
+    font-weight: bold;
+  }
+
+  .form-check-label {
+    font-weight: normal;
+  }
+
+  .btn-group {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .btn-group button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  .btn-group button:last-child {
+    margin-right: 0;
+  }
+
+  .section-title {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <h1 class="section-title">Information</h1>
+        <form>
+          <h2 class="section-title">Report Form</h2>
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="country">Country:</label>
+            <select id="country" name="country" class="form-control">
+              <option value="Afghanistan">Afghanistan</option>
+              <option value="Bangladesh">Bangladesh</option>
+              <option value="India">India</option>
+              <option value="Nepal">Nepal</option>
+              <option value="Pakistan" selected>Pakistan</option>
+              <option value="Sri Lanka">Sri Lanka</option>
+              <option value="United Arab Emirates">United Arab Emirates</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Hobbies:</label><br>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="hobby1" name="hobbies[]" value="reading">
+              <label class="form-check-label" for="hobby1">Reading</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="hobby2" name="hobbies[]" value="listening_music">
+              <label class="form-check-label" for="hobby2">Listening to Music</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="hobby3" name="hobbies[]" value="gardening">
+              <label class="form-check-label" for="hobby3">Gardening</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="hobby4" name="hobbies[]" value="swimming">
+              <label class="form-check-label" for="hobby4">Swimming</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="hobby5" name="hobbies[]" value="athletics">
+              <label class="form-check-label" for="hobby5">Athletics</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="gender">Gender:</label>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" id="gender1" name="gender" value="male">
+              <label class="form-check-label" for="gender1">Male</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" id="gender2" name="gender" value="female">
+              <label class="form-check-label" for="gender2">Female</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="website">Your Website:</label>
+            <input type="text" id="website" name="website" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="additional-info">Other Information About You:</label>
+            <textarea id="additional-info" name="additional-info" rows="6" class="form-control"></textarea>
+          </div>
+          <div class="btn-group">
+            <button type="submit" class="btn btn-primary" name="send-report">Send in my report</button>
+            <button type="reset" class="btn btn-secondary" name="erase-report">Erase my report</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
